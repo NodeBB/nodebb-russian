@@ -1,16 +1,16 @@
 .. image:: https://i.imgur.com/3yj1n6N.png
 
 |
-**NodeBB** is a next-generation discussion platform that utilizes web sockets for instant interactions and real-time notifications. NodeBB forums have many modern features out of the box such as social network integration and streaming discussions.
+**NodeBB** является дискуссионной площадкой нового поколения, котоаря использует веб-сокеты для мгновенного взаимодействия и уведомлений в режиме реального времени. Форум NodeBB имеет множество современных функций, включая интеграцию социальных сетей и потоковые обсуждения.
 
-NodeBB is an open source project which can be forked on `GitHub <https://github.com/NodeBB/NodeBB/>`_. Don't forget to check out the ways that you can help contribute to this project, from translations, pull requests, and telling your friends.
+NodeBB это проект с открытым исходным кодом, который может быть форкнут на `GitHub <https://github.com/NodeBB/NodeBB/>` _. Вы можете внести свой вклад в этот проект - помочь с переводом, рассказать о проекте друзьям, подать запрос на включение в проект сделанных Вами изменений.
 
-Table of Contents
-=================
+Содержание
+==========
 
 .. _installing:
 
-Installing NodeBB
+Установка NodeBB
 -----------------
 
 .. toctree::
@@ -23,7 +23,7 @@ Installing NodeBB
 
 .. _configuring:
 
-Configuring NodeBB
+Настройка NodeBB
 ------------------
 
 .. toctree::
@@ -33,7 +33,7 @@ Configuring NodeBB
     configuring/databases
     configuring/proxies
 
-Running NodeBB
+Запуск NodeBB
 ------------------
 
 .. toctree::
@@ -41,7 +41,7 @@ Running NodeBB
 
     running/index
 
-Upgrading NodeBB
+Обновление NodeBB
 ------------------
 
 .. toctree::
@@ -49,7 +49,7 @@ Upgrading NodeBB
 
     upgrading/index
 
-Administrating NodeBB
+Администрирование NodeBB
 ---------------------
 
 .. toctree::
@@ -59,16 +59,16 @@ Administrating NodeBB
     admin/sso
     admin/uploads
 
-Scaling NodeBB
---------------
+Масштабирование NodeBB
+----------------------
 
 .. toctree::
     :maxdepth: 2
 
     scaling/index
 
-Contributing to NodeBB
-----------------------
+Учтастие в разработке NodeBB
+----------------------------
 
 .. toctree::
     :maxdepth: 2
@@ -76,8 +76,8 @@ Contributing to NodeBB
     contributing/style-guide
     modules/index
 
-Plugin System
--------------
+Система Плагинов
+----------------
 
 .. toctree::
     :maxdepth: 2
@@ -86,15 +86,15 @@ Plugin System
     plugins/hooks
     plugins/settings
 
-Widgets System
---------------
+Система Виджетов
+----------------
 
 .. toctree::
     :maxdepth: 2
 
     widgets/create
 
-Theming Engine
+Создание тем
 --------------
 
 .. toctree::
@@ -104,23 +104,23 @@ Theming Engine
     themes/templates
 
 
-Developer's Resources
----------------------
+Ресурсы для разработчика
+------------------------
 
 .. toctree::
     :maxdepth: 2
 
     resources
 
-Helping out the NodeBB Project
-------------------------------
+Помощь проекту 
+---------------
 
 .. toctree::
     :maxdepth: 2
 
     helping/index
 
-Troubleshooting / Help
+Диагностика  / Помощь
 ----------------------
 
 .. toctree::
@@ -128,7 +128,7 @@ Troubleshooting / Help
 
     help/help
 
-Indices and tables
+Индексы и таблицы
 ==================
 
 * :ref:`genindex`
