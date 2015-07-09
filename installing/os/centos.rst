@@ -2,57 +2,57 @@
 CentOS 6/7
 --------------------
 
-First we should make sure that CentOS is up to date, we can to so using this command:
+Во-первых, мы должны убедиться, что CentOS обновлен, мы можем сделать это, используя следующую команду:
 
 .. code:: bash
 	
 	yum -y update
 
-**If your on CentOS 7, you will need to install the epel release, you can do so using the following command:
+**Если Вы используете CentOS 7, то Вам необходимо установить epel release, это можно сделать выполнив следующую команду:
 
 .. code:: bash
 	
 	yum -y install epel-release
 	
 
-Now, we install our base software stack:
+Теперь мы установим базовое программное обеспечение:
 
 .. code:: bash
 
 	yum -y groupinstall "Development Tools"
 	yum -y install nodejs git redis ImageMagick npm
 
-If you want to use MongoDB, LevelDB, or another database instead of Redis please look at the :doc:`Configuring Databases <../../configuring/databases>` section.
+Если Вы хотите использовать MongoDB, LevelDB или другую базу данных вместо Redis, пожалуйста посмотрете раздел :doc:`Настройка баз данных <../../configuring/databases>`.
 
-Next, clone the NodeBB repository:
+Далее клонируем репозиторий:
 
 .. code:: bash
 
 	cd /path/to/nodebb/install/location
 	git clone -b v0.7.x https://github.com/NodeBB/NodeBB nodebb
 	
-**Note: To clone the master branch you can use the same command with out the "-b" option.
+**Примечание: Для клонирования master-ветки Вы можте использовать такую же команду, убрав параметр "-b".
 
-After cloning the repository, obtain all of the dependencies required by NodeBB:
+Получаем все зависимости, необходимые для NodeBB, после клонирования репозитория:
 
 .. code:: bash
       
       cd nodebb
       npm install
 
-Initiate the setup script by running the app with the ``setup`` flag:
+Инициируем скрипт установки, запустив приложение с флагом ``setup``:
 
 .. code:: bash
 
 	  ./nodebb setup
 
 
-The default settings are for a local server running on the default port, with a redis store on the same machine/port. 
+Настройки по умолчанию сделаны для локального сервера, который работает на дефолтном порту с базой данных redis на этой же машине и тоже на дефолтном порту.
 
-Lastly, we run the forum.
+Наконец, мы запускаем форум.
   
 .. code:: bash
 
 	 ./nodebb start
 
-NodeBB can also be started with helper programs, such as ``forever``. :doc:`Take a look at the options here <../../running/index>`.
+NodeBB можно запускать с помощью вспомогательных программ, таких как forever ``forever``. :doc:`Посмотрите на возможные варианты здесь <../../running/index>`.
