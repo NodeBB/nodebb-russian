@@ -2,16 +2,16 @@
 Ubuntu
 --------------------
 
-First, we install our base software stack:
+Первым делом установим необходимое базовое программное обеспечение:
 
 .. code:: bash
 
 	$ sudo apt-get install git nodejs nodejs-legacy npm redis-server imagemagick build-essential
 
 
-If you want to use MongoDB, LevelDB, or another database instead of Redis please look at the :doc:`Configuring Databases <../../configuring/databases>` section.
+Если Вы хотите использовать MongoDB, LevelDB или другую базу данных вместо Redis, пожалуйста посмотрете раздел :doc:`Настройка Баз Данных <../../configuring/databases>`.
 
-**If your package manager only installed a version of Node.js that is less than 0.8 (e.g. Ubuntu 12.10, 13.04), use ``node --version`` to determine your version of Node.js:**
+**Если менеджер пакетов может установить версию Node.js только ниже 0.8 (это относится к Ubuntu 12.10, 13.04), используйте команду ``node --version`` для определния версии  Node.js:**
 
 
 .. code:: bash
@@ -19,10 +19,10 @@ If you want to use MongoDB, LevelDB, or another database instead of Redis please
 	$ sudo add-apt-repository ppa:chris-lea/node.js
 	$ sudo apt-get update && sudo apt-get dist-upgrade
 
-If you'd like to install Node.js v0.11, use the repository url ``ppa:chris-lea/node.js-devel`` instead.
-The npm is installed with the nodejs
+Если Вы хотите установить Node.js v0.11, используйте репозиторий ``ppa:chris-lea/node.js-devel``.
+Npm устанавливается вместе с nodejs
 
-Next, clone this repository:
+Затем клонируем этот репозиторий:
 
 
 .. code:: bash
@@ -30,7 +30,7 @@ Next, clone this repository:
 	$ git clone -b v0.7.x https://github.com/NodeBB/NodeBB.git nodebb
 
 
-Obtain all of the dependencies required by NodeBB:
+Получаем все необходимые зависимости для NodeBB:
 
 .. code:: bash
 
@@ -38,7 +38,7 @@ Obtain all of the dependencies required by NodeBB:
     $ npm install --production
 
 
-Start the NodeBB Web Installer, and continue setup at http://127.0.0.1:4567.
+Запускаем Веб-установщик NodeBB и продолжаем установку в браузере по адресу http://127.0.0.1:4567.
 
 .. code:: bash
 
@@ -46,7 +46,7 @@ Start the NodeBB Web Installer, and continue setup at http://127.0.0.1:4567.
 
 ----
 
-**Alternatively**: Initiate the setup script by running the app with the ``setup`` flag:
+**Альтернативно**: Инициируйте скрипт настройки, запустив приложение с флагом ``setup``:
 
 
 .. code:: bash
@@ -54,9 +54,9 @@ Start the NodeBB Web Installer, and continue setup at http://127.0.0.1:4567.
 	$ ./nodebb setup
 
 
-The default settings are for a local server running on the default port, with a redis store on the same machine/port. 
+Настройки по умолчанию сделаны для локального сервера, который работает на дефолтном порту с базой данных redis на этой же машине, которая тоже слушает порт по умолчанию.
 
-Lastly, we run the forum.
+Теперь запускаем форум.
 
 
 .. code:: bash
@@ -64,4 +64,4 @@ Lastly, we run the forum.
 	$ ./nodebb start
 
 
-NodeBB can also be started with helper programs, such as ``forever``. :doc:`Take a look at the options here <../../running/index>`.
+NodeBB можно запускать с помощью вспомогательных программ, таких как ``forever``. :doc:`Посмотрите на возможные варианты здесь <../../running/index>`.
