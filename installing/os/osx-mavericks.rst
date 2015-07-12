@@ -1,10 +1,10 @@
 OSX Mavericks
 ==========
 
-Required Software
----------------------
+Необходимое программное обеспечение
+------------------------------------
 
-First, install the following programs:
+В начале установим следующие программы:
 
 * http://nodejs.org/
 * http://brew.sh/
@@ -12,53 +12,53 @@ First, install the following programs:
 
 
 
-Running NodeBB
+Запуск NodeBB
 ---------------------
 
-Install redis with homebrew:
+Установите redis с homebrew:
 
 .. code::
 
   brew install redis
   
-Start redis server, in your terminal enter:
+Запускаем redis server, введите в терминале:
   
 .. code::
 
   redis-server
 
-Clone NodeBB repo:
+Клонируем репозиторий NodeBB:
 
 .. code:: bash
 
     git clone -b v0.7.x https://github.com/NodeBB/NodeBB.git
 
-Enter directory: 
+Заходим в каталог: 
 
 .. code:: bash
 
     cd NodeBB
 
-Install dependencies:
+Устанавливаем зависимости:
 
 .. code:: bash
 
     npm install
 
-Run interactive installation:
+Запускаем интерактивную установку:
 
 .. code:: bash
 
     ./nodebb setup
 
-You may leave all of the options as default.
+Можно оставить все опции по умолчанию.
 
-And you're done! After the installation, run 
+Готово! Запускаем после установки 
 
 .. code:: bash
 
     ./nodebb start
 
-You can visit your forum at ``http://localhost:4567/``
+Можно проверить работу форума по адресу ``http://localhost:4567/``
 
 
