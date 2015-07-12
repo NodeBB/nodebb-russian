@@ -1,10 +1,10 @@
 Windows 8
 ==========
 
-Required Software
----------------------
+Необходимое программное обеспечениеRequired Software
+---------------------------------------------------------
 
-First, install the following programs:
+В начале установим следующие программы:
 
 * https://windows.github.com/
 * http://nodejs.org/
@@ -12,73 +12,73 @@ First, install the following programs:
 * http://imagemagick.org/script/binary-releases.php#windows/
 * https://www.python.org/ftp/python/2.7.8/python-2.7.8.msi
 
-You may have to restart your computer.
+Возможно Вам придется перезагрузить компьютер.
 
-Running NodeBB
+Запуск NodeBB
 ---------------------
 
-Start Redis Server
+Запускаем Redis Server
 
 .. note::
 
-	The default location of Redis Server is
+	Расположение Redis Server по умолчанию:
 
 	**C:\\Program Files (x86)\\Redis\\StartRedisServer.cmd**
 
-Open Git Shell, and type the following commands. Clone NodeBB repo:
+Откройте Git Shell и введите следующие команды. Клонируем репозиторий NodeBB:
 
 .. code:: bash
 
     git clone -b v0.7.x https://github.com/NodeBB/NodeBB.git
 
-Enter directory: 
+Заходим в каталог: 
 
 .. code:: bash
 
     cd NodeBB
 
-Install dependencies:
+Устанавливаем зависимости:
 
 .. code:: bash
 
     npm install
 
-Run interactive installation:
+Запускаем интерактивную установку:
 
 .. code:: bash
 
     node app.js --setup
 
-You may leave all of the options as default.
+Можно оставить все параметры по умолчанию.
 
-And you're done! After the installation, run 
+Готово! После установки, запустите: 
 
 .. code:: bash
 
     node app.js
 
-You can visit your forum at ``http://127.0.0.1:4567/``
+Можно проверить работу форума по адресу ``http://127.0.0.1:4567/``
 
 
-Developing on Windows
----------------------
+Разработка под  Windows
+-------------------------
 
-It's a bit of a pain to shutdown and restart NodeBB everytime you make changes. First install supervisor:
+Каждый раз когда Вы делаете изменения, выключение и перезагрузка NodeBB будет головной болью. Для начала установим supervisor:
 
 .. code:: bash
 
     npm install -g supervisor
 
-Open up bash:
+Откройте bash:
 
 .. code:: bash
 
     bash
 
-And run NodeBB on "watch" mode:
+И запустите NodeBB в режиме "watch":
 
 .. code:: bash
 
     ./nodebb watch
 
-It will launch NodeBB in development mode, and watch files that change and automatically restart your forum.
+Эта команда запустит NodeBB в режиме разработчика, будет отслеживать изменения файлов и автоматически перезапускать форум.
